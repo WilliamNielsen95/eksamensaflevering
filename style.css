@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+Theme Name: Twenty Fourteen
+Theme URI: https://wordpress.org/themes/twentyfourteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Template:     twentyfourteen
+Version: 2.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, news, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: twentyfourteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+/* ændring af på hovedelementer */ 
+
+.header-main, #secondary, .hfeed.site::before {
+	background-color: #7CCEF4;
+}
+
+::selection {
+    background-color: #009FE3;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection:hover {
+    color: #009FE3;
+   
+}
+
+
+
+/* header */
+
+#logo-header{
+	display: inline;
+	height: 120px;
+	width: 120px;
+	margin: 5px;
+}
+
+.header-main {
+	padding-left: 25px;
+}
+
+
+	/* menulinje */ 
+.secondary-navigation {
+	font-family: ShadowsIntoLight;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.secondary-navigation a {
+	padding-left: 12px;
+}
+
+#menu-item-8 ::after {
+	right: 5px;
+	top: 18px;
+}
+
+#primary-sidebar,.site-description {
+	display: none;
+}
+
+#secondary a:hover{
+	background-color: #E6E000;
+}
+
+
+
+
+/* startside navigationsknap */ 
+
+#primary-navigation a:hover{
+	background-color: #E6E000;
+}
+
+#primary-navigation a {
+	font-family: ShadowsIntoLight;
+	font-size: 14px;
+}
+
+
+.site-navigation .current_page_item > a, .site-navigation .current_page_ancestor > a, .site-navigation .current-menu-item > a, .site-navigation .current-menu-ancestor > a {
+    color: #EF7B17;
+    font-weight: 900;
+} 
+
+.secondary-navigation ul ul {
+	background-color: #009FE3;
+}
+
+.secondary-navigation li:hover > a,
+.secondary-navigation li.focus > a {
+	background-color: #E6E000;
+}
+
+
+
+/* søgeknap i venstre side */ 
+
+.search-toggle {
+	background-color: #009FE3;
+
+}
+
+.search-toggle:hover, .search-toggle.active, .search-box {
+    background-color: #E6E000;
+}
+
+
+
+/* baggrund for posts og startside (page) */
+
+.entry-content, .entry-header {
+	padding-bottom: 0px !important;
+}
+
+.content-area {
+	padding-top: 0px;
+	margin-top: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.site-content .entry-content, .site-content .entry-summary, .page-content {
+    background-color: transparent;
+}
+
+.site-content {
+	margin-left: 20px;
+}
+
+.entry-header {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	background-color: transparent !important;
+}
+
+/* startside (infografik over Spanien) */ 
+
+.flex-control-paging li a {
+	background-color: #009FE3 !important;
+}
+
+.flex-control-paging li a:hover {
+	background-color: #E6E000 !important;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color: #EF7B17 !important;
+}
+
+
+
+.post-69 { 
+background-image: url("http://wnn.dk/wordpress-dsr/wp-content/uploads/2018/05/spanien-landkort.png"); 
+background-position: center center;
+background-size: contain;	
+background-repeat: no-repeat; 
+}
+
+
+
+
+
+/* posts */ 
+
+.archive-header, .entry-meta, .post-navigation {
+	display: none;
+}
+
+.entry-header a:hover {
+	color: #009FE3;
+}
+
+	/* barcelona baggrund */ 
+
+.post-18 {
+	background-image: url("http://wnn.dk/wordpress-dsr/wp-content/uploads/2018/05/barcelona-baggrund2.png"); 
+	background-position: center bottom;
+	background-size: contain;	
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+}
+	
+
+	/* sevilla baggrund */ 
+.post-20 {
+	background-image: url("http://wnn.dk/wordpress-dsr/wp-content/uploads/2018/05/sevilla-baggrund.png"); 
+	background-position: center bottom;
+	background-size: contain;	
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+}	
+
+
+
+
+/* kontaktformula */ 
+
+
+input[type="submit"]{
+	background-color: #009FE3;	
+}
+
+input[type="submit"]:hover {
+	background-color: #E6E000;	
+}
+
+input[type="submit"]:focus {
+	background-color: #E6E000;	
+}
+
+input[type="reset"]:focus {
+	background-color: #E52520;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    border: 2px solid #E52520;
+	margin: 0px;
+}
+
+
+
+/* footer*/ 
+
+.site-info {
+	background-color: #E52520;
+	text-align: center;
+}
+
+.site-info p{
+	margin: 0px;
+}
+
